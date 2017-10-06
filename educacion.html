@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Evaluación de Fundamentos de HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="IMG/Logo.svg" alt="imagen SVG" title="imagen SVG" width="150px" />
+                <h1>Hoja de Vida</h1>
+                <h2>Luis Eduardo Alvarez Meneses</h2>
+                <ol>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="educacion.html">Educación</a></li>
+                    <li><a href="experiencia.html">Experiencia</a></li>
+                </ol>
+            </header>
+            <section>
+                <h3>Educación</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Institución</th>
+                            <th>Lugar</th>
+                            <th>¿Culminó?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1995</td>
+                            <td>Colegio Urbana</td>
+                            <td>Moniquira</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>2001</td>
+                            <td>Instituto Integrado Nacionalizado Antonio Nariño</td>
+                            <td>Moniquira</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>2011</td>
+                            <td>Univesidad UPTC</td>
+                            <td>Tunja</td>
+                            <td>SI</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Agregar Formación</h3>
+                <form id="agregarFor" name="agregarFor">
+                    <label>Año</label>
+                    <select id="year" name="year" required>
+                        <option value="" selected="selected">Seleccione</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                    </select><br>
+                    <label>Institución</label>
+                    <input type="text" id="inst" name="inst" value="" required />
+                    <br>
+                    <label>Lugar</label>
+                    <textarea id="lugar" name="lugar" required></textarea>
+                    <br>
+                    <label>¿Culmino?</label>
+                    <input type="radio" name="culmino" value="1" required/>SI
+                    <input type="radio" name="culmino" value="2" required />NO
+                    <br>
+                    <button type="submit">Registrar</button>
+                </form>
+            </section>
+            <footer>
+                <div>
+                    @Derechos Reservados
+                    <ol>
+                        <li><b>Email:</b>Luiguimen1@hotmail.com</li>
+                        <li><b>Telefono:</b>1234567890</li>
+                        <li><b>Direción:</b>En algun lugar del mundo</li>
+                    </ol>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
